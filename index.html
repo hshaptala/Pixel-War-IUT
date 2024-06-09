@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pixel IUT War</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" />
+</head>
+
+<body>
+  <header>
+    <h1>PIXEL IUT WAR</h1>
+  </header>
+  <div class="line"></div>
+  <main>
+    <div class="container">
+
+      <div class="element">
+        <table id="table-info">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Team</th>
+              <th>Last modification</th>
+              <th>Banned</th>
+              <th>Nb pixels modified</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="element">
+        <table id="table-pixel"></table>
+      </div>
+
+      <div class="element">
+        <div id="menu">
+
+          <h3>Your UID</h3>
+          <div id="menu-uid">
+            <input id="input-uid" type="password" name="uid" />
+            <img id="toggle-img" src="img/hide.png" alt="Show/Hide" onclick="toggleVisibility()"
+              style="cursor: pointer;">
+          </div>
+
+          <h3>Choose a team</h3>
+          <form>
+            <select id="teams">
+              <option value="">None</option>
+              <option value="1">Team 1</option>
+              <option value="2">Team 2</option>
+              <option value="3">Team 3</option>
+              <option value="4">Team 4</option>
+            </select>
+            <button type="button" id="button-choose-team">Submit</button>
+          </form>
+
+          <h3>Color</h3>
+          <input type="color" id="color" value="#ffffff" />
+
+          <h3>Time to wait</h3>
+          <p id="time-to-wait">You can modify a pixel</p>
+
+          <h3>Server message</h3>
+          <p id="server-message">No message</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://codenestedu.fr/resultats/" target="_blank">History</a>
+    <p>© 2024 Shaptala Hlib</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
